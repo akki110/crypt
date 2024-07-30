@@ -1,0 +1,21 @@
+.news-container{
+    max-width: auto;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.721);
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.news-container h1 {
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    padding: 30px;
+}
+
+.news-detail{
+    font-size: 15px;
+    font-weight: 100;
+    padding: 15px;
+}

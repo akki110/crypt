@@ -1,0 +1,44 @@
+.carousel-container{
+    position: absolute;
+    top: 10%;
+    color: white;
+    width: 100%;
+    height: auto;
+    
+}
+
+.carouselItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        top: 5%;
+        width: 90%;
+        border-width: 1px;
+    }
+
+    .carouselItem {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}
+
+/* Mobile styles (480px and below) */
+@media (max-width: 480px) {
+    .carousel-container {
+        top: 5%;
+        width: 100%;
+        border-width: 1px;
+    }
+
+    .carouselItem {
+        font-size: 0.8em;
+        padding: 8px;
+    }
+}    

@@ -1,0 +1,79 @@
+.container {
+    display: flex;
+    flex-direction: column; /* Added this line */
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+.chart-coin {
+    width: auto;
+    position: relative;
+    height: 500px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column; /* Added this line */
+}
+
+.days-button {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    
+}
+
+.btn-day{
+    width: 20%;
+    height: 40px;
+    border: 2px solid gold;
+    color: white;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}
+
+.btn-day:hover{
+    background-color: gold;
+    border: 1px solid white;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+  
+    .days-button {
+      width: 100%;
+      flex-direction: row; /* Keep buttons in a row */
+      flex-wrap: wrap; /* Allow buttons to wrap to the next line if needed */
+      margin-top: auto;
+      order: 2; /* Ensure buttons are displayed at the bottom */
+    }
+  
+    .btn-day {
+      width: 100%;
+      height: 40px;
+      margin: 5px 0; /* Add margin for spacing between buttons */
+      border: 2px solid gold;
+      color: white;
+      font-size: 20px;
+      border-radius: 5px;
+    }
+  
+    .btn-day:hover {
+      background-color: gold;
+      border: 1px solid white;
+    }
+  }
+  
+
+  @media (max-width: 426px) {
+    
+    .days-button{
+        margin-top: -94%;
+    }
+    .btn-day {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+  }  

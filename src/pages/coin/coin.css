@@ -1,0 +1,143 @@
+.coin-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.726);
+  max-width: 100%;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 30%;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  border-right: 2px solid gray;
+  color: white;
+}
+
+.coin-img {
+  height: 200px;
+  width: 200px;
+  margin-top: 5%;
+  margin-left: 28%;
+}
+
+.coin-name {
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.coin-description{
+  font-size: 20px;
+  font-weight: 300;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.coin-details{
+  font-size: 30px;
+  font-weight: 400;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chart {
+  width: 70%;
+  display: flex;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 30%;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .coin-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 2px solid gray;
+  }
+
+  .coin-img {
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+  }
+
+  .coin-name {
+    font-size: 30px;
+  }
+
+  .coin-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .coin-details {
+    font-size: 20px;
+  }
+
+  .chart {
+    width: 100%;
+    margin-left: 0;
+    order: 1; /* Ensure chart is displayed at the top */
+  }
+
+  
+}
+
+
+@media (max-width: 426px) {
+  .coin-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 2px solid gray;
+  }
+
+  .coin-img {
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+  }
+
+  .coin-name {
+    font-size: 30px;
+  }
+
+  .coin-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .coin-details {
+    font-size: 20px;
+  }
+
+  .chart {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .days-button {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+}

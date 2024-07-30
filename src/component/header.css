@@ -1,0 +1,142 @@
+/* Base Styles */
+.header-main {
+    background-color: #000000;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    backdrop-filter: blur(50px);
+    width: 100%;
+    height: 90px;
+}
+
+.nav-contain {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    margin: 0 auto;
+    color: white;
+    padding-left: 50px;
+}
+
+.nav-contain .title {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #ffd700;
+    margin: 0;
+    padding-right: 20px;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    position: relative;
+    margin-left: 0;
+}
+
+.navbar-menu li {
+    margin: 0 26px;
+}
+
+.menu-item {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #FFFFFF;
+    position: relative;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.menu-item:hover {
+    width: 100%;
+    color: #ffd700;
+}
+
+.select-currency {
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    height: 50px;
+    cursor: pointer;
+    font-family: sans-serif;
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Tablet Styles */
+    .nav-contain {
+        max-width: 100%;
+        width: 100%;
+        display:flex;
+    }
+
+    .nav-contain .title {
+        font-size: 24px;
+        padding-right: 0;
+        margin-top: -1%;
+        
+    }
+
+    .navbar-menu {
+        margin-right: 10%;
+        margin-left: 12%;
+        gap: 50px;
+    }
+
+    .navbar-menu li {
+        margin: 0;
+    }
+
+    .menu-item {
+        font-size: 18px;
+    }
+
+    .select-currency {
+        font-size: 18px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile Styles */
+    .nav-contain {
+        max-width: 100%;
+        width: 100%;
+        display:flex;
+    }
+
+    .nav-contain .title {
+        font-size: 24px;
+        padding-right: 0;
+        margin-top: -1%;
+        
+    }
+
+    .navbar-menu {
+        margin-right: 8%;
+        margin-left: 8%;
+        gap: 30px;
+    }
+
+    .navbar-menu li {
+        margin: 0;
+    }
+
+    .menu-item {
+        font-size: 16px;
+    }
+
+    .select-currency {
+        font-size: 16px;
+        height: auto;
+    }
+}
